@@ -1,6 +1,6 @@
 "use strict";
 /* Contact function survey: static page. Answers: localStorage (resume), POST to a Google Apps Script web app (no-cors) after every question and once more as a whole at the end, JSON download as a backup. */
-const SUBMIT_URL = "PASTE_APPS_SCRIPT_WEB_APP_URL_HERE";      // <- replace with the /exec URL of the deployed web app (see DEPLOY_zh.md)
+const SUBMIT_URL = "https://script.google.com/macros/s/AKfycbwTpg-5o0Ij9q2vwT-Nh1eC5uc4WD3pnsyBarGygS397CdCD_0hXPi-dP0dE4sms-48/exec";      // <- replace with the /exec URL of the deployed web app (see DEPLOY_zh.md)
 const STORE = "cfs_v1";
 const FUNCS = ["support", "brace", "rest", "manipulate", "incidental", "unclear"];
 const NEEDS = ["yes", "no", "unsure"];
