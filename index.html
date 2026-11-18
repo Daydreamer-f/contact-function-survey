@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact function survey · 接触功能问卷</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1 id="t-title"></h1>
+  <div class="tools">
+    <button type="button" id="btn-lang" class="ghost"></button>
+    <button type="button" id="btn-guide" class="ghost"></button>
+    <button type="button" id="btn-dl" class="ghost"></button>
+  </div>
+</header>
+
+<main>
+  <!-- intro / instructions -->
+  <section id="screen-intro" class="card">
+    <p id="t-lede" class="lede"></p>
+    <div id="t-defs" class="defs"></div>
+    <h2 id="t-ex-h"></h2>
+    <div class="examples">
+      <figure class="ex">
+        <img data-src="img/ex_Date03_Sub04_chairblack_sit__02.jpg" alt="example 1" loading="lazy">
+        <figcaption id="t-ex1"></figcaption>
+      </figure>
+      <figure class="ex">
+        <img data-src="img/ex_sub16_largebox_010__00.jpg" alt="example 2" loading="lazy">
+        <figcaption id="t-ex2"></figcaption>
+      </figure>
+    </div>
+    <p id="t-ex3" class="note"></p>
+    <div class="start">
+      <label for="rater" id="t-name-l"></label>
+      <input id="rater" type="text" maxlength="40" autocomplete="off">
+      <div class="row">
+        <button type="button" id="btn-start" class="primary"></button>
+        <button type="button" id="btn-resume" class="primary" hidden></button>
+        <button type="button" id="btn-restart" class="ghost" hidden></button>
+      </div>
+      <p id="t-privacy" class="note"></p>
+    </div>
+  </section>
+
+  <!-- one question -->
+  <section id="screen-q" class="card" hidden>
+    <div class="prog"><div class="bar"><i id="bar"></i></div><span id="pos" class="mono"></span></div>
+    <div class="meta">
+      <span id="m-what" class="what"></span>
+      <span id="m-when" class="mono muted"></span>
+    </div>
+    <figure class="stim">
+      <img id="img" alt="" decoding="async">
+      <figcaption id="t-cap" class="muted"></figcaption>
+    </figure>
+    <div class="legend"><span class="sw red" id="t-leg1"></span><span class="sw amber" id="t-leg2"></span></div>
+    <div class="q">
+      <h3 id="t-q1"></h3>
+      <div class="opts" id="opts-f"></div>
+    </div>
+    <div class="q">
+      <h3 id="t-q2"></h3>
+      <div class="opts three" id="opts-n"></div>
+    </div>
+    <div class="nav">
+      <button type="button" id="btn-prev" class="ghost"></button>
+      <span id="state" class="muted"></span>
+      <button type="button" id="btn-next" class="primary"></button>
+    </div>
+  </section>
+
+  <!-- finished -->
+  <section id="screen-end" class="card" hidden>
+    <h2 id="t-end-h"></h2>
+    <p id="t-end-p"></p>
+    <div class="row">
+      <button type="button" id="btn-final" class="primary"></button>
+      <button type="button" id="btn-dl2" class="ghost"></button>
+      <button type="button" id="btn-back" class="ghost"></button>
+    </div>
+    <p id="final-state" class="note"></p>
+  </section>
+</main>
+<footer class="foot"><span id="t-foot"></span></footer>
+<script src="app.js"></script>
+</body>
+</html>
